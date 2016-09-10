@@ -8,7 +8,7 @@ namespace novemob
 		{
 			InitializeComponent();
 
-			MainPage = new novemobPage();
+			MainPage = new LoginPage();
 		}
 
 		protected override void OnStart()

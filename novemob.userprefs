@@ -1,1 +1,4 @@
-﻿<Properties StartupItem="iOS/novemob.iOS.csproj" />
+﻿<Properties StartupItem="iOS/novemob.iOS.csproj">
+  <MonoDevelop.Ide.ItemProperties.novemob.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C417D4C3-6C44-49B0-8018-15ACF76D3E45" />
+  <MonoDevelop.Ide.ItemProperties.novemob.Droid PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+</Properties>
