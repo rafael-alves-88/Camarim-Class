@@ -17,10 +17,10 @@ namespace novemob
 
 		async void CEP_Unfocused(object sender, Xamarin.Forms.FocusEventArgs e)
 		{
-			string sUrl = "https://viacep.com.br/ws/" + txtCEP.Text + "/json/";
+			string sUrl = "https://viacep.com.br/ws/{0}/json/";
 
 			HttpClient client = new HttpClient();
-			var uri = new Uri(string.Format(sUrl, string.Empty));
+			var uri = new Uri(string.Format(sUrl, txtCEP.Text));
 			var response = await client.GetAsync(uri);
 
 			CEPResult cep = new CEPResult();
