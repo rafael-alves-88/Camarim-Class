@@ -18,6 +18,9 @@ namespace novemob
 		{
 			UserDialogs.Instance.ShowLoading("Logando como: " + txtLogin.Text);
 			await Task.Delay(2000);
+
+			await Navigation.PushAsync(new RegisterUsuarioPage());
+
 			UserDialogs.Instance.HideLoading();
 			//DisplayAlert("Login", txtPassword.Text, "OK", "Cancelar");
 		}
