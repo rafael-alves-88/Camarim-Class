@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="novemob.AddressPage" BackgroundColor="Gray" Title="Endereco">
 	<ContentPage.Content>
+		<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+			<Entry x:Name="txtCEP" WidthRequest="200" Placeholder="CEP" Keyboard="Numeric" Unfocused="CEP_Unfocused" />
+			<Entry x:Name="txtStreet" WidthRequest="200" Placeholder="Rua" IsEnabled="false" />
+			<Entry x:Name="txtNeighborhood" WidthRequest="200" Placeholder="Bairro" IsEnabled="false" />
+			<Entry x:Name="txtCity" WidthRequest="200" Placeholder="Cidade" IsEnabled="false" />
+			<Entry x:Name="txtState" WidthRequest="200" Placeholder="Estado" IsEnabled="false" />
+			<Entry x:Name="txtNumber" WidthRequest="200" Placeholder="Número" />
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
