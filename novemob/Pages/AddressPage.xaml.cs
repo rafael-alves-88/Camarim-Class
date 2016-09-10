@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Text;
+using Acr.UserDialogs;
 
 using Xamarin.Forms;
 
@@ -17,6 +18,8 @@ namespace novemob
 
 		async void CEP_Unfocused(object sender, Xamarin.Forms.FocusEventArgs e)
 		{
+			UserDialogs.Instance.ShowLoading("Obtendo dados...");
+
 			string sUrl = "https://viacep.com.br/ws/{0}/json/";
 
 			HttpClient client = new HttpClient();
@@ -38,6 +41,8 @@ namespace novemob
 
 				txtNumber.Focus();
 			}
+
+			UserDialogs.Instance.HideLoading();
 		}
 	}
 }
